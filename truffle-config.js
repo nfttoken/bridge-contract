@@ -7,11 +7,11 @@ module.exports = {
             port:       7545,
             network_id: "*",
         },
-        kcctestnet:  {
+        oytestnet:  {
             provider:        function () {
-                return new HDWalletProvider(process.env.BRIDGE_MNEMONIC, "https://rpc-testnet.kcc.network");
+                return new HDWalletProvider(process.env.BRIDGE_MNEMONIC, "https://rpc-testnet.oychain.io");
             },
-            network_id:      322,
+            network_id:      126,
             skipDryRun:      true,
             pollingInterval: 60000,
         },
